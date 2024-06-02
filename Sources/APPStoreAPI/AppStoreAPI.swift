@@ -9,15 +9,15 @@ import Foundation
 import SwiftJWT
 
 
-public class AppStoreAPI {
+public final class AppStoreAPI {
     
     let isSandbox: Bool
     
-    init(isSandbox: Bool) {
+    public init(isSandbox: Bool) {
         self.isSandbox = isSandbox
     }
     
-    func requestForTransaction(devInfo: AppDevInfo, userOrderId: String, onDone: @escaping ((_ transactions: [TransactionClaims]?, _ error: String?)->())) {
+    func requestForTransaction(devInfo: AppDevInfo, userOrderId: String, onDone: @escaping (([TransactionClaims]?, String?)->())) {
         
         let tokenInfo = getJWTToken(info: devInfo)
         
