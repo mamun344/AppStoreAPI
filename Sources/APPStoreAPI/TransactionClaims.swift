@@ -10,20 +10,20 @@ import SwiftJWT
 
 
 public struct TransactionClaims: Claims {
-    let transactionId: String?
-    let originalTransactionId: String?
-    let bundleId: String?
-    let productId: String?
-    let purchaseDate: Double?
-    let originalPurchaseDate: Double?
-    let quantity: Int?
-    let type: String?
-    let inAppOwnershipType: String?
-    let signedDate: Double?
-    let environment: String?
-    let transactionReason: String?
-    let storefront: String?
-    let storefrontId: String?
-    let price: Double?
-    let currency: String?
+    public let transactionId: String?
+    public let originalTransactionId: String?
+    public let bundleId: String?
+    public let productId: String?
+    public let purchaseDate: Double?
+    public let originalPurchaseDate: Double?
+    public let quantity: Int?
+    public let type: String?
+    public let inAppOwnershipType: String?
+    public let signedDate: Double?
+    public let environment: String?
+    public let transactionReason: String?
+    public let storefront: String?
+    public let storefrontId: String?
+    public let price: Double?
+    public let currency: String?
 }
