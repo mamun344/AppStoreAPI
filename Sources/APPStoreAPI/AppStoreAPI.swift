@@ -9,7 +9,7 @@ import Foundation
 import SwiftJWT
 
 
-public final class AppStoreAPI {
+public class AppStoreAPI {
     
     let isSandbox: Bool
     
